@@ -76,9 +76,8 @@ rock_library(maps
         #to look for.
         pcl_io-${PCL_VERSION_MAJOR}.${PCL_VERSION_MINOR}
         pcl_common-${PCL_VERSION_MAJOR}.${PCL_VERSION_MINOR}
-    DEPS_PLAIN
-        Boost_SYSTEM 
-        Boost_FILESYSTEM 
-        Boost_SERIALIZATION
+    DEPS Boost::system
+         Boost::filesystem
+         Boost::serialization
 )
 
